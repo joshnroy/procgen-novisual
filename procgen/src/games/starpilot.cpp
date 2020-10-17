@@ -68,39 +68,39 @@ class StarPilotGame : public BasicAbstractGame {
             names.push_back("misc_assets/towerDefense_tile297.png");
         } else if (type == FLYER || type == FAST_FLYER) {
             names.push_back("misc_assets/spaceShips_001.png");
-            names.push_back("misc_assets/spaceShips_002.png");
-            names.push_back("misc_assets/spaceShips_003.png");
-            names.push_back("misc_assets/spaceShips_004.png");
-            names.push_back("misc_assets/spaceShips_005.png");
-            names.push_back("misc_assets/spaceShips_006.png");
-            names.push_back("misc_assets/spaceShips_007.png");
+            // names.push_back("misc_assets/spaceShips_002.png");
+            // names.push_back("misc_assets/spaceShips_003.png");
+            // names.push_back("misc_assets/spaceShips_004.png");
+            // names.push_back("misc_assets/spaceShips_005.png");
+            // names.push_back("misc_assets/spaceShips_006.png");
+            // names.push_back("misc_assets/spaceShips_007.png");
         } else if (type == METEOR) {
             names.push_back("misc_assets/spaceMeteors_001.png");
-            names.push_back("misc_assets/spaceMeteors_002.png");
-            names.push_back("misc_assets/spaceMeteors_003.png");
-            names.push_back("misc_assets/spaceMeteors_004.png");
-            names.push_back("misc_assets/meteorGrey_big1.png");
-            names.push_back("misc_assets/meteorGrey_big2.png");
-            names.push_back("misc_assets/meteorGrey_big3.png");
-            names.push_back("misc_assets/meteorGrey_big4.png");
+            // names.push_back("misc_assets/spaceMeteors_002.png");
+            // names.push_back("misc_assets/spaceMeteors_003.png");
+            // names.push_back("misc_assets/spaceMeteors_004.png");
+            // names.push_back("misc_assets/meteorGrey_big1.png");
+            // names.push_back("misc_assets/meteorGrey_big2.png");
+            // names.push_back("misc_assets/meteorGrey_big3.png");
+            // names.push_back("misc_assets/meteorGrey_big4.png");
         } else if (type == CLOUD) {
             names.push_back("misc_assets/spaceEffect1.png");
-            names.push_back("misc_assets/spaceEffect2.png");
-            names.push_back("misc_assets/spaceEffect3.png");
-            names.push_back("misc_assets/spaceEffect4.png");
-            names.push_back("misc_assets/spaceEffect5.png");
-            names.push_back("misc_assets/spaceEffect6.png");
-            names.push_back("misc_assets/spaceEffect7.png");
-            names.push_back("misc_assets/spaceEffect8.png");
-            names.push_back("misc_assets/spaceEffect9.png");
+            // names.push_back("misc_assets/spaceEffect2.png");
+            // names.push_back("misc_assets/spaceEffect3.png");
+            // names.push_back("misc_assets/spaceEffect4.png");
+            // names.push_back("misc_assets/spaceEffect5.png");
+            // names.push_back("misc_assets/spaceEffect6.png");
+            // names.push_back("misc_assets/spaceEffect7.png");
+            // names.push_back("misc_assets/spaceEffect8.png");
+            // names.push_back("misc_assets/spaceEffect9.png");
         } else if (type == TURRET) {
             names.push_back("misc_assets/spaceStation_018.png");
-            names.push_back("misc_assets/spaceStation_019.png");
+            // names.push_back("misc_assets/spaceStation_019.png");
         } else if (type == FINISH_LINE) {
             names.push_back("misc_assets/spaceRockets_001.png");
-            names.push_back("misc_assets/spaceRockets_002.png");
-            names.push_back("misc_assets/spaceRockets_003.png");
-            names.push_back("misc_assets/spaceRockets_004.png");
+            // names.push_back("misc_assets/spaceRockets_002.png");
+            // names.push_back("misc_assets/spaceRockets_003.png");
+            // names.push_back("misc_assets/spaceRockets_004.png");
         }
     }
 
@@ -251,7 +251,8 @@ class StarPilotGame : public BasicAbstractGame {
 
             if (type == FLYER || type == FAST_FLYER) {
                 group_size = rand_gen.randint(0, hp_max_group_size) + 1;
-                flyer_theme = rand_gen.randn(NUM_SHIP_THEMES);
+                // flyer_theme = rand_gen.randn(NUM_SHIP_THEMES);
+                flyer_theme = 0;
             }
 
             float y_pos = rand_pos(r, main_height);

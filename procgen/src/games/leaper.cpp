@@ -49,18 +49,18 @@ class LeaperGame : public BasicAbstractGame {
             names.push_back("misc_assets/terrainTile6.png");
         } else if (type == CAR) {
             names.push_back("misc_assets/car_yellow_5.png");
-            names.push_back("misc_assets/car_black_1.png");
-            names.push_back("misc_assets/car_blue_2.png");
-            names.push_back("misc_assets/car_green_3.png");
-            names.push_back("misc_assets/car_red_4.png");
+            // names.push_back("misc_assets/car_black_1.png");
+            // names.push_back("misc_assets/car_blue_2.png");
+            // names.push_back("misc_assets/car_green_3.png");
+            // names.push_back("misc_assets/car_red_4.png");
         } else if (type == LOG) {
             names.push_back("misc_assets/elementWood044.png");
         } else if (type == PLAYER) {
             names.push_back("misc_assets/frog1.png");
-            names.push_back("misc_assets/frog2.png");
-            names.push_back("misc_assets/frog4.png");
-            names.push_back("misc_assets/frog6.png");
-            names.push_back("misc_assets/frog7.png");
+            // names.push_back("misc_assets/frog2.png");
+            // names.push_back("misc_assets/frog4.png");
+            // names.push_back("misc_assets/frog6.png");
+            // names.push_back("misc_assets/frog7.png");
         } else if (type == FINISH_LINE) {
             names.push_back("misc_assets/finish2.png");
         }

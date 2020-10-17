@@ -764,7 +764,8 @@ void BasicAbstractGame::game_reset() {
     grid_size = main_width * main_height;
     grid.resize(main_width, main_height);
 
-    background_index = rand_gen.randn((int)(main_bg_images_ptr->size()));
+    // background_index = rand_gen.randn((int)(main_bg_images_ptr->size()));
+    background_index = 0;
 
     AssetGen bggen(&rand_gen);
 
@@ -1037,12 +1038,14 @@ void BasicAbstractGame::fit_aspect_ratio(const std::shared_ptr<Entity> &ent) {
 
 void BasicAbstractGame::choose_random_theme(const std::shared_ptr<Entity> &ent) {
     initialize_asset_if_necessary(ent->image_type);
-    ent->image_theme = rand_gen.randn(asset_num_themes[ent->image_type]);
+    // ent->image_theme = rand_gen.randn(asset_num_themes[ent->image_type]);
+    ent->image_theme = 0;
 }
 
 void BasicAbstractGame::choose_step_random_theme(const std::shared_ptr<Entity> &ent) {
     initialize_asset_if_necessary(ent->image_type);
-    ent->image_theme = step_rand_int % asset_num_themes[ent->image_type];
+    // ent->image_theme = step_rand_int % asset_num_themes[ent->image_type];
+    ent->image_theme = 0;
 }
 
 bool BasicAbstractGame::should_draw_entity(const std::shared_ptr<Entity> &entity) {

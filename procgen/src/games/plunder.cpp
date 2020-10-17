@@ -50,10 +50,10 @@ class PlunderGame : public BasicAbstractGame {
         if (type == SHIP) {
             names.push_back("misc_assets/ship_1.png");
             names.push_back("misc_assets/ship_2.png");
-            names.push_back("misc_assets/ship_3.png");
-            names.push_back("misc_assets/ship_4.png");
-            names.push_back("misc_assets/ship_5.png");
-            names.push_back("misc_assets/ship_6.png");
+            // names.push_back("misc_assets/ship_3.png");
+            // names.push_back("misc_assets/ship_4.png");
+            // names.push_back("misc_assets/ship_5.png");
+            // names.push_back("misc_assets/ship_6.png");
         } else if (type == PLAYER_BULLET) {
             names.push_back("misc_assets/cannonBall.png");
         } else if (type == PANEL) {
@@ -123,7 +123,7 @@ class PlunderGame : public BasicAbstractGame {
         target_quota = 20;
         spawn_prob = 0.06f;
         r_scale = options.distribution_mode == EasyMode ? 1.5f : 1.0f;
-        int num_total_ship_types = 6;
+        int num_total_ship_types = 2;
 
         num_lanes = 5;
         lane_directions.clear();

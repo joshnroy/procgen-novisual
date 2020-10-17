@@ -54,16 +54,16 @@ class DodgeballGame : public BasicAbstractGame {
             names.push_back("misc_assets/ball_soccer1.png");
         } else if (type == ENEMY) {
             names.push_back("misc_assets/character1.png");
-            names.push_back("misc_assets/character2.png");
-            names.push_back("misc_assets/character3.png");
-            names.push_back("misc_assets/character4.png");
-            names.push_back("misc_assets/character5.png");
-            names.push_back("misc_assets/character6.png");
-            names.push_back("misc_assets/character7.png");
-            names.push_back("misc_assets/character8.png");
-            names.push_back("misc_assets/character9.png");
-            names.push_back("misc_assets/character10.png");
-            names.push_back("misc_assets/character11.png");
+            // names.push_back("misc_assets/character2.png");
+            // names.push_back("misc_assets/character3.png");
+            // names.push_back("misc_assets/character4.png");
+            // names.push_back("misc_assets/character5.png");
+            // names.push_back("misc_assets/character6.png");
+            // names.push_back("misc_assets/character7.png");
+            // names.push_back("misc_assets/character8.png");
+            // names.push_back("misc_assets/character9.png");
+            // names.push_back("misc_assets/character10.png");
+            // names.push_back("misc_assets/character11.png");
         } else if (type == DOOR) {
             names.push_back("misc_assets/blockRed.png");
         } else if (type == ENEMY_BALL) {
@@ -76,14 +76,14 @@ class DodgeballGame : public BasicAbstractGame {
             names.push_back("misc_assets/tileStone_slope2.png");
         } else if (type == DUST_CLOUD) {
             names.push_back("misc_assets/spaceEffect1.png");
-            names.push_back("misc_assets/spaceEffect2.png");
-            names.push_back("misc_assets/spaceEffect3.png");
-            names.push_back("misc_assets/spaceEffect4.png");
-            names.push_back("misc_assets/spaceEffect5.png");
-            names.push_back("misc_assets/spaceEffect6.png");
-            names.push_back("misc_assets/spaceEffect7.png");
-            names.push_back("misc_assets/spaceEffect8.png");
-            names.push_back("misc_assets/spaceEffect9.png");
+            // names.push_back("misc_assets/spaceEffect2.png");
+            // names.push_back("misc_assets/spaceEffect3.png");
+            // names.push_back("misc_assets/spaceEffect4.png");
+            // names.push_back("misc_assets/spaceEffect5.png");
+            // names.push_back("misc_assets/spaceEffect6.png");
+            // names.push_back("misc_assets/spaceEffect7.png");
+            // names.push_back("misc_assets/spaceEffect8.png");
+            // names.push_back("misc_assets/spaceEffect9.png");
         }
     }
 
@@ -348,7 +348,8 @@ class DodgeballGame : public BasicAbstractGame {
 
         spawn_entities(num_enemies, enemy_r, ENEMY, 0, 0, main_width, main_height);
 
-        int enemy_theme = rand_gen.randn(NUM_ENEMY_THEMES);
+        // int enemy_theme = rand_gen.randn(NUM_ENEMY_THEMES);
+	int enemy_theme = 0;
 
         for (auto ent : entities) {
             if (ent->type == ENEMY) {

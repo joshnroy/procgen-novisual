@@ -66,14 +66,14 @@ class Jumper : public BasicAbstractGame {
             names.push_back("misc_assets/bunny2_walk2.png");
         } else if (type == CAVEWALL_TOP) {
             names.push_back("platformer/tileBlue_05.png");
-            names.push_back("platformer/tileGreen_05.png");
-            names.push_back("platformer/tileYellow_06.png");
-            names.push_back("platformer/tileBrown_06.png");
+            // names.push_back("platformer/tileGreen_05.png");
+            // names.push_back("platformer/tileYellow_06.png");
+            // names.push_back("platformer/tileBrown_06.png");
         } else if (type == CAVEWALL) {
             names.push_back("platformer/tileBlue_08.png");
-            names.push_back("platformer/tileGreen_08.png");
-            names.push_back("platformer/tileYellow_09.png");
-            names.push_back("platformer/tileBrown_09.png");
+            // names.push_back("platformer/tileGreen_08.png");
+            // names.push_back("platformer/tileYellow_09.png");
+            // names.push_back("platformer/tileBrown_09.png");
         }
     }
 
@@ -235,7 +235,8 @@ class Jumper : public BasicAbstractGame {
 
         out_of_bounds_object = WALL_OBJ;
 
-        wall_theme = rand_gen.randn(NUM_WALL_THEMES);
+        // wall_theme = rand_gen.randn(NUM_WALL_THEMES);
+        wall_theme = 0;
         jump_count = 0;
         jump_delta = 0;
         jump_time = 0;

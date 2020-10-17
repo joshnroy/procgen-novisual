@@ -114,9 +114,9 @@ class CoinRun : public BasicAbstractGame {
             names.push_back("kenney/Enemies/sawHalf_move.png");
         } else if (type == CRATE) {
             names.push_back("kenney/Tiles/boxCrate.png");
-            names.push_back("kenney/Tiles/boxCrate_double.png");
-            names.push_back("kenney/Tiles/boxCrate_single.png");
-            names.push_back("kenney/Tiles/boxCrate_warning.png");
+            // names.push_back("kenney/Tiles/boxCrate_double.png");
+            // names.push_back("kenney/Tiles/boxCrate_single.png");
+            // names.push_back("kenney/Tiles/boxCrate_warning.png");
         }
     }
 
@@ -429,7 +429,8 @@ class CoinRun : public BasicAbstractGame {
             background_index = 0;
         } else {
             choose_random_theme(agent);
-            wall_theme = rand_gen.randn(NUM_GROUND_THEMES);
+            // wall_theme = rand_gen.randn(NUM_GROUND_THEMES);
+	    wall_theme = 0;
         }
 
         agent->rx = .5;

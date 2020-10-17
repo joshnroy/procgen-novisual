@@ -48,34 +48,34 @@ class Climber : public BasicAbstractGame {
     void asset_for_type(int type, std::vector<std::string> &names) override {
         if (type == PLAYER) {
             names.push_back("platformer/playerBlue_stand.png");
-            names.push_back("platformer/playerGreen_stand.png");
-            names.push_back("platformer/playerGrey_stand.png");
-            names.push_back("platformer/playerRed_stand.png");
+            // names.push_back("platformer/playerGreen_stand.png");
+            // names.push_back("platformer/playerGrey_stand.png");
+            // names.push_back("platformer/playerRed_stand.png");
         } else if (type == PLAYER_JUMP) {
             names.push_back("platformer/playerBlue_walk4.png");
-            names.push_back("platformer/playerGreen_walk4.png");
-            names.push_back("platformer/playerGrey_walk4.png");
-            names.push_back("platformer/playerRed_walk4.png");
+            // names.push_back("platformer/playerGreen_walk4.png");
+            // names.push_back("platformer/playerGrey_walk4.png");
+            // names.push_back("platformer/playerRed_walk4.png");
         } else if (type == PLAYER_RIGHT1) {
             names.push_back("platformer/playerBlue_walk1.png");
-            names.push_back("platformer/playerGreen_walk1.png");
-            names.push_back("platformer/playerGrey_walk1.png");
-            names.push_back("platformer/playerRed_walk1.png");
+            // names.push_back("platformer/playerGreen_walk1.png");
+            // names.push_back("platformer/playerGrey_walk1.png");
+            // names.push_back("platformer/playerRed_walk1.png");
         } else if (type == PLAYER_RIGHT2) {
             names.push_back("platformer/playerBlue_walk2.png");
-            names.push_back("platformer/playerGreen_walk2.png");
-            names.push_back("platformer/playerGrey_walk2.png");
-            names.push_back("platformer/playerRed_walk2.png");
+            // names.push_back("platformer/playerGreen_walk2.png");
+            // names.push_back("platformer/playerGrey_walk2.png");
+            // names.push_back("platformer/playerRed_walk2.png");
         } else if (type == WALL_TOP) {
             names.push_back("platformer/tileBlue_05.png");
-            names.push_back("platformer/tileGreen_05.png");
-            names.push_back("platformer/tileYellow_06.png");
-            names.push_back("platformer/tileBrown_06.png");
+            // names.push_back("platformer/tileGreen_05.png");
+            // names.push_back("platformer/tileYellow_06.png");
+            // names.push_back("platformer/tileBrown_06.png");
         } else if (type == WALL_MID) {
             names.push_back("platformer/tileBlue_08.png");
-            names.push_back("platformer/tileGreen_08.png");
-            names.push_back("platformer/tileYellow_09.png");
-            names.push_back("platformer/tileBrown_09.png");
+            // names.push_back("platformer/tileGreen_08.png");
+            // names.push_back("platformer/tileYellow_09.png");
+            // names.push_back("platformer/tileBrown_09.png");
         } else if (type == ENEMY1) {
             names.push_back("platformer/enemySwimming_1.png");
         } else if (type == ENEMY2) {
@@ -248,7 +248,8 @@ class Climber : public BasicAbstractGame {
         agent->x = 1 + agent->rx;
         agent->y = 1 + agent->ry;
         choose_random_theme(agent);
-        wall_theme = rand_gen.randn(NUM_WALL_THEMES);
+        // wall_theme = rand_gen.randn(NUM_WALL_THEMES);
+	wall_theme = 0;
 
         init_floor_and_walls();
         generate_platforms();

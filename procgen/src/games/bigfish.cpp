@@ -37,8 +37,8 @@ class BigFish : public BasicAbstractGame {
             names.push_back("misc_assets/fishTile_072.png");
         } else if (type == FISH) {
             names.push_back("misc_assets/fishTile_074.png");
-            names.push_back("misc_assets/fishTile_078.png");
-            names.push_back("misc_assets/fishTile_080.png");
+            // names.push_back("misc_assets/fishTile_078.png");
+            // names.push_back("misc_assets/fishTile_080.png");
         }
     }
 

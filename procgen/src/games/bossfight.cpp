@@ -76,33 +76,33 @@ class BossfightGame : public BasicAbstractGame {
     void asset_for_type(int type, std::vector<std::string> &names) override {
         if (type == PLAYER) {
             names.push_back("misc_assets/playerShip1_blue.png");
-            names.push_back("misc_assets/playerShip1_green.png");
-            names.push_back("misc_assets/playerShip2_orange.png");
-            names.push_back("misc_assets/playerShip3_red.png");
+            // names.push_back("misc_assets/playerShip1_green.png");
+            // names.push_back("misc_assets/playerShip2_orange.png");
+            // names.push_back("misc_assets/playerShip3_red.png");
         } else if (type == BOSS) {
             names.push_back("misc_assets/enemyShipBlack1.png");
-            names.push_back("misc_assets/enemyShipBlue2.png");
-            names.push_back("misc_assets/enemyShipGreen3.png");
-            names.push_back("misc_assets/enemyShipRed4.png");
+            // names.push_back("misc_assets/enemyShipBlue2.png");
+            // names.push_back("misc_assets/enemyShipGreen3.png");
+            // names.push_back("misc_assets/enemyShipRed4.png");
         } else if (type == ENEMY_BULLET) {
             names.push_back("misc_assets/laserGreen14.png");
-            names.push_back("misc_assets/laserRed11.png");
-            names.push_back("misc_assets/laserBlue09.png");
+            // names.push_back("misc_assets/laserRed11.png");
+            // names.push_back("misc_assets/laserBlue09.png");
         } else if (type == PLAYER_BULLET) {
             names.push_back("misc_assets/laserGreen14.png");
-            names.push_back("misc_assets/laserRed11.png");
-            names.push_back("misc_assets/laserBlue09.png");
+            // names.push_back("misc_assets/laserRed11.png");
+            // names.push_back("misc_assets/laserBlue09.png");
         } else if (type == SHIELDS) {
             names.push_back("misc_assets/shield2.png");
         } else if (type == BARRIER) {
             names.push_back("misc_assets/spaceMeteors_001.png");
-            names.push_back("misc_assets/spaceMeteors_002.png");
-            names.push_back("misc_assets/spaceMeteors_003.png");
-            names.push_back("misc_assets/spaceMeteors_004.png");
-            names.push_back("misc_assets/meteorGrey_big1.png");
-            names.push_back("misc_assets/meteorGrey_big2.png");
-            names.push_back("misc_assets/meteorGrey_big3.png");
-            names.push_back("misc_assets/meteorGrey_big4.png");
+            // names.push_back("misc_assets/spaceMeteors_002.png");
+            // names.push_back("misc_assets/spaceMeteors_003.png");
+            // names.push_back("misc_assets/spaceMeteors_004.png");
+            // names.push_back("misc_assets/meteorGrey_big1.png");
+            // names.push_back("misc_assets/meteorGrey_big2.png");
+            // names.push_back("misc_assets/meteorGrey_big3.png");
+            // names.push_back("misc_assets/meteorGrey_big4.png");
         }
     }
 
@@ -226,8 +226,10 @@ class BossfightGame : public BasicAbstractGame {
 
         choose_random_theme(agent);
 
-        player_laser_theme = rand_gen.randn(NUM_LASER_THEMES);
-        boss_laser_theme = rand_gen.randn(NUM_LASER_THEMES);
+        // player_laser_theme = rand_gen.randn(NUM_LASER_THEMES);
+	player_laser_theme = 0;
+        // boss_laser_theme = rand_gen.randn(NUM_LASER_THEMES);
+	boss_laser_theme = 0;
 
         attack_modes.clear();
 

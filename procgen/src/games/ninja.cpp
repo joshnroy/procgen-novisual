@@ -48,15 +48,15 @@ class Ninja : public BasicAbstractGame {
 
         if (type == WALL_MID) {
             names.push_back("misc_assets/tile_bricksGrey.png");
-            names.push_back("misc_assets/tile_bricksGrown.png");
-            names.push_back("misc_assets/tile_bricksRed.png");
+            // names.push_back("misc_assets/tile_bricksGrown.png");
+            // names.push_back("misc_assets/tile_bricksRed.png");
         } else if (type == GOAL) {
             names.push_back("platformer/shroom1.png");
-            names.push_back("platformer/shroom2.png");
-            names.push_back("platformer/shroom3.png");
-            names.push_back("platformer/shroom4.png");
-            names.push_back("platformer/shroom5.png");
-            names.push_back("platformer/shroom6.png");
+            // names.push_back("platformer/shroom2.png");
+            // names.push_back("platformer/shroom3.png");
+            // names.push_back("platformer/shroom4.png");
+            // names.push_back("platformer/shroom5.png");
+            // names.push_back("platformer/shroom6.png");
         } else if (type == PLAYER) {
             names.push_back("platformer/zombie_idle.png");
         } else if (type == PLAYER_JUMP) {
@@ -334,7 +334,8 @@ class Ninja : public BasicAbstractGame {
 
         last_fire_time = 0;
 
-        wall_theme = rand_gen.randn(NUM_WALL_THEMES);
+        // wall_theme = rand_gen.randn(NUM_WALL_THEMES);
+	wall_theme = 0;
 
         init_floor_and_walls();
         generate_coin_to_the_right(difficulty);

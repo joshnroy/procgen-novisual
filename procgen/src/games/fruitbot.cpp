@@ -53,26 +53,26 @@ class FruitBotGame : public BasicAbstractGame {
             names.push_back("misc_assets/keyRed2.png");
         } else if (type == BAD_OBJ) {
             names.push_back("misc_assets/food1.png");
-            names.push_back("misc_assets/food2.png");
-            names.push_back("misc_assets/food3.png");
-            names.push_back("misc_assets/food4.png");
-            names.push_back("misc_assets/food5.png");
-            names.push_back("misc_assets/food6.png");
+            // names.push_back("misc_assets/food2.png");
+            // names.push_back("misc_assets/food3.png");
+            // names.push_back("misc_assets/food4.png");
+            // names.push_back("misc_assets/food5.png");
+            // names.push_back("misc_assets/food6.png");
         } else if (type == GOOD_OBJ) {
             names.push_back("misc_assets/fruit1.png");
-            names.push_back("misc_assets/fruit2.png");
-            names.push_back("misc_assets/fruit3.png");
-            names.push_back("misc_assets/fruit4.png");
-            names.push_back("misc_assets/fruit5.png");
-            names.push_back("misc_assets/fruit6.png");
+            // names.push_back("misc_assets/fruit2.png");
+            // names.push_back("misc_assets/fruit3.png");
+            // names.push_back("misc_assets/fruit4.png");
+            // names.push_back("misc_assets/fruit5.png");
+            // names.push_back("misc_assets/fruit6.png");
         } else if (type == LOCKED_DOOR) {
             names.push_back("misc_assets/fenceYellow.png");
         } else if (type == LOCK) {
             names.push_back("misc_assets/lockRed2.png");
         } else if (type == PRESENT) {
             names.push_back("misc_assets/present1.png");
-            names.push_back("misc_assets/present2.png");
-            names.push_back("misc_assets/present3.png");
+            // names.push_back("misc_assets/present2.png");
+            // names.push_back("misc_assets/present3.png");
         }
     }
 
@@ -241,7 +241,8 @@ class FruitBotGame : public BasicAbstractGame {
 
         for (auto ent : entities) {
             if (ent->type == GOOD_OBJ || ent->type == BAD_OBJ) {
-                ent->image_theme = rand_gen.randn(object_group_size);
+                // ent->image_theme = rand_gen.randn(object_group_size);
+                ent->image_theme = 0;
                 fit_aspect_ratio(ent);
             }
         }
