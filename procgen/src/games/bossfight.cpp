@@ -89,8 +89,8 @@ class BossfightGame : public BasicAbstractGame {
             // names.push_back("misc_assets/laserRed11.png");
             // names.push_back("misc_assets/laserBlue09.png");
         } else if (type == PLAYER_BULLET) {
-            names.push_back("misc_assets/laserGreen14.png");
-            // names.push_back("misc_assets/laserRed11.png");
+            // names.push_back("misc_assets/laserGreen14.png");
+            names.push_back("misc_assets/laserRed11.png");
             // names.push_back("misc_assets/laserBlue09.png");
         } else if (type == SHIELDS) {
             names.push_back("misc_assets/shield2.png");

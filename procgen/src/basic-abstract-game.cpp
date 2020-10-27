@@ -109,6 +109,9 @@ void BasicAbstractGame::initialize_asset_if_necessary(int img_idx) {
         num_themes = 1;
         aspect_ratio = 1.0;
     } else {
+	if (names.size() == 1) {
+	    theme = 0;
+	}
         asset_ptr = get_asset_ptr(names[theme]);
         num_themes = (int)(names.size());
         aspect_ratio = asset_ptr->width() * 1.0 / asset_ptr->height();
